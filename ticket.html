@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket - EventZone</title>
+    <style>
+       body{
+background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+       } 
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Book Your Ticket</h2>
+    <form id="ticketForm">
+        <label for="name">
+            Full Name:
+            <input type="text" id="name" placeholder="Full Name" required>
+        </label>
+
+        <label for="email">
+            Email:
+            <input type="email" id="email" placeholder="Email" required>
+        </label>
+
+        <label for="event">
+            Event:
+            <select id="event" required>
+                <option value="">Select Event</option>
+                <option value="Music Festival">Music Festival</option>
+                <option value="Art Exhibition">Art Exhibition</option>
+                <option value="Tech Conference">Tech Conference</option>
+            </select>
+        </label>
+
+        <label for="tickets">
+            Number of Tickets:
+            <input type="number" id="tickets" placeholder="Number of Tickets" min="1" required>
+        </label>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+</div>
+</body>
+</html>

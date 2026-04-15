@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EventZone Platform</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:#1e90ff;
+    color:white;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('event.jpg') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:10px 0;
+}
+
+.btn{
+    background:#ffcc00;
+    color:black;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.event{
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:10px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px;
+    background:#1e90ff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.cta{
+    background:#1e90ff;
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+    <div class="logo">EventZone</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+        <li><a href="#services">Services</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#vendors">Vendors</a></li>
+    </ul>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>All Events & Services in One Place</h1>
+        <p>Tickets • Hotels • Venues • Contests • Vendors • Airtime</p>
+        <a href="#services" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            🎟️ <h3>Tickets</h3>
+            <p>Buy event tickets easily</p>
+        </div>
+
+        <div class="card">
+            🏨 <h3>Hotels</h3>
+            <p>Book hotels for events</p>
+        </div>
+
+        <div class="card">
+            🏟️ <h3>Venues</h3>
+            <p>Rent event halls</p>
+        </div>
+
+        <div class="card">
+            🏆 <h3>Contests</h3>
+            <p>Join & host contests</p>
+        </div>
+
+        <div class="card">
+            🛍️ <h3>Vendors</h3>
+            <p>Hire DJs, MCs, caterers</p>
+        </div>
+
+        <div class="card">
+            📱 <h3>Airtime/Data</h3>
+            <p>Buy airtime & data (coming soon)</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="grid">
+
+        <div class="event">
+            <h3>Music Festival</h3>
+            <p>Lagos</p>
+            <button>Book Ticket</button>
+        </div>
+
+        <div class="event">
+            <h3>Tech Conference</h3>
+            <p>Abuja</p>
+            <button>Book Ticket</button>
+        </div>
+
+        <div class="event">
+            <h3>Art Show</h3>
+            <p>Ibadan</p>
+            <button>Book Ticket</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- VENDORS -->
+<section class="section" id="vendors">
+    <h2>Top Vendors</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            DJ Max
+            <button>Hire</button>
+        </div>
+
+        <div class="card">
+            MC Bright
+            <button>Hire</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Start Your Event Journey Today</h2>
+    <p>Everything you need in one platform</p>
+    <a class="btn">Register Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 EventZone | Built for Events & Services</p>
+</footer>
+
+</body>
+</html>
